@@ -1,20 +1,21 @@
-# YEG祭2026 会場案内（本番用）
+# YEG祭2026 会場案内（本番用・背景画像組み込み版）
 
-## GitHub Pagesへの公開
-1. ZIPを解凍します。
-2. このフォルダ内のファイル・フォルダをすべて、リポジトリの最上位へアップロードします。
-3. GitHubの `Settings` → `Pages` を開きます。
-4. `Deploy from a branch`、`main`、`/(root)` を選択して保存します。
+## GitHubへアップロードするもの
+このフォルダの中身をすべて、リポジトリの一番上（ルート）へアップロードしてください。
+
+- index.html
+- .nojekyll
+- vercel.json
+- README.md
+- assets フォルダ
+- data フォルダ
+
+特に `assets/map.webp` が会場マップ画像です。`assets` フォルダごとアップロードしてください。
+
+## GitHub Pages
+Settings → Pages → Deploy from a branch → main / (root) → Save
 
 ## 更新方法
-- 出展者情報：`data/exhibitors.json`
-- タイムテーブル：`data/timetable.json`
-- 会場マップ：`assets/map.webp`（同じファイル名で差し替え）
-
-## 構成
-- `index.html`：本体
-- `assets/map.webp`：会場マップ
-- `data/exhibitors.json`：出展者情報
-- `data/timetable.json`：タイムテーブル
-- `vercel.json`：Vercel用セキュリティヘッダー
-- `.nojekyll`：GitHub Pages用
+- 会場マップ：`assets/map.webp` を同じ名前で差し替え
+- 出展者：`data/exhibitors.json` を編集
+- タイムテーブル：`data/timetable.json` を編集
